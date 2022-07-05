@@ -10,6 +10,7 @@ li {
 
 .horizontalAlign{
 	float: left;
+	clear: none;
 }
 
 .navbarElement {
@@ -55,6 +56,10 @@ li a:hover {
 	background-color: #c0c0c0;
 }
 
+.flexcontainer{
+	display: flex;
+}
+
 </style>
 </head>
 
@@ -62,29 +67,33 @@ li a:hover {
 
 <ul class="navbar">
   <li><a class="navbarElement" href="index.html">Home</a></li>
-  <li><a class="navbarElement" href="projects.html">Test Page</a></li>
+  <li><a class="navbarElement" href="projects.html">Projects</a></li>
 </ul>
 
-<div class="lightgreydiv">
-	<div class="horizontalAlign">
-		<img src="../assets/spogus.jpg" alt="test image" style="width: 200px;"></img>
-	</div>
-	<div class="horizontalAlign">
+<div class="flexcontainer" style="background-color: #A0ffff; padding: 15px">
+	<img src="../assets/spogus.jpg" alt="test image" style="width: 200px;"></img>
+
+	<div>
 		<h1>AAAAAA</h1>
 		<p style="font-size: 20px">Created for Global Game Jam (2021) with two friends in 48 hours, AAAAAA is a game about screaming into a mic for full immersion as a bat in a cave using echolocation. I did the code for proceedual level generation as well as some of the player movement</p>
-		<p> if you want to play this yourself you can get it <a href="https://chaoclypse.itch.io/aaaaaa">here</a></p>
+		<p> if you want to play this yourself you can get it <a href="https://chaoclypse.itch.io/aaaaaa" style="color: #000000">here</a></p>
 		<p> mic required, unless you like stumbling around in the dark</p>
 	</div>
 </div>
 
-<div class="horizontalAlign">
-	<p>test1</p>
-	<p>test2</p>
+<div class="flexcontainer" style="background-color: #ffA0ff; padding: 15px">
+	<div>
+		<h1>IHNAMR</h1>
+		<p style="font-size: 20px">My biggest project yet, IHNAMR (I have no artist and I must rpg) is my custom turn based rpg engine</p>
+		<p> because i have a lot to say about this project it gets its own page <a href="IHNAMR.html">here</a></p>
+		<p> mic required, unless you like stumbling around in the dark</p>
+	</div>
+
+	<img src="../assets/spogus.jpg" alt="test image" style="width: 200px;"></img>
 </div>
 
-<div class="horizontalAlign">
-	<p>test1</p>
-	<p>test2</p>
+<div class="flexcontainer" style="background-color: #c0c0c0; padding: 2px; align-items: center; justify-content: center;">
+	<p style="font-size: 20px">vvv Assorted prototypes below vvv</p>
 </div>
 
 </body>

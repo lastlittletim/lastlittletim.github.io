@@ -10,6 +10,7 @@ li {
 
 .horizontalAlign{
 	float: left;
+	clear: none;
 }
 
 .navbarElement {
@@ -29,8 +30,14 @@ li a:hover {
 	padding: 25px;
 }
 
-.greydiv {
-	background-color: #808080;
+.lightgreydiv {
+	background-color: #c0c0c0;
+	padding: 25px;
+}
+
+.darkgreydiv {
+	background-color: #404040;
+	padding: 25px;
 }
 
 .navbar {
@@ -39,6 +46,18 @@ li a:hover {
 	padding: 0;
 	overflow: hidden;
 	background-color: #161616;
+}
+
+.lightgreyul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #c0c0c0;
+}
+
+.flexcontainer{
+	display: flex;
 }
 
 </style>
@@ -51,10 +70,13 @@ li a:hover {
   <li><a class="navbarElement" href="projects.html">Projects</a></li>
 </ul>
 
-<div class="bluediv">
-<h1>Tim's questionable portfolio</h1>
-<p>That's right I learned html specifically for this<p>
-<p>It would have been a lot easier to use a website creator but I'm in too deep to quit now<p>
+<div class="flexcontainer" style="background-color: #c0c0c0; padding: 2px; align-items: center; justify-content: center;">
+	<p style="font-size: 50px">IHNAMR</p>
+	<p> I Have No Artist and i Must RPG</p>
+</div>
+
+<img src="../assets/spogus.jpg"></img>
+
 </div>
 
 </body>
