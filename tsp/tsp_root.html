@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+.divsect{
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	height: 25000px;
+}
+
+.keypadbutton{
+	color: #000000;
+	float: left;
+	padding: 20px;
+	font-size: 80px;
+}
+
+p {
+	font-size: 25px;
+}
+
+a {
+	font-size: 45px;
+}
+
+</style>
+
+<div class="divsect" id="root">
+	<p>Stanley worked for a company in a big building where he was Employee #427. Employee #427's job was simple: he sat at his desk in Room 427 and he pushed buttons on a keyboard.</p>
+	<p>Employee #427's job was simple: he sat at his desk in Room 427 and he pushed buttons on a keyboard.</p>
+	<p>Orders came to him through a monitor on his desk telling him what buttons to push, how long to push them, and in what order.</p>
+	<p>This is what Employee #427 did every day of every month of every year, and although others may have considered it soul rending,</p>
+	<p>Stanley relished every moment that the orders came in, as though he had been made exactly for this job.</p>
+	<p>And Stanley was happy.</p>
+	<p>And then one day, something very peculiar happened.</p>
+	<p>Something that would forever change Stanley;</p>
+	<p>Something he would never quite forget.</p>
+	<p>He had been at his desk for nearly an hour when he had realized not one single order had arrived on the monitor for him to follow.</p>
+	<p>No one had shown up to give him instructions, call a meeting, or even say 'hi'. Never in all his years at the company had this happened, this complete isolation.</p>
+	<p>Something was very clearly wrong. Shocked, frozen solid, Stanley found himself unable to move for the longest time.</p>
+	<p>But as he came to his wits and regained his senses, he got up from his desk and stepped out of his office.</p>
+	<p></p>
+
+	<a href="#root-leave">> step out of your office</a>
+	<a href="#root-wait">> wait</a>
+	<a href="#root-inspect">> inspect</a>
+</div>
+
+<div class="divsect" id="root-wait">
+
+	<p>But Stanley simply couldn't handle the pressure.</p>
+	<p></p>
+	<p>What if he had to make a decision? What if a crucial outcome fell under his responsibility? He had never been trained for that! No, this couldn't go any way except badly.</p>
+	<p></p>
+	<p>The thing to do now, Stanley thought to himself, is to wait. Nothing will hurt me. Nothing will break me. In here, I can be happy, forever. I will be happy.</p>
+	<p></p>
+	<p>Stanley waited. Hours passed. Then days. Had years gone by? He no longer had the ability to tell.</p>
+	<p></p>
+	<p>But the one thing he knew, for sure, beyond any doubt, was that if he waited long enough, the answers would come. Eventually, some day, they would arrive. Soon,</p>
+	<p></p>
+	<p>Very soon now, this will end. He will be spoken to. He will be told what to do. Now it's just a little bit closer. Now it's even closer. Here it comes..</p>
+
+	<a href="#root">> wait</a>
+</div>
+
+<div class="divsect" id="root-inspect">
+	<p style="color: #008000">It's your office. The carpet is slightly moist</p>
+
+	<a href="#root-leave">> step out of your office</a>
+	<a href="#root-wait">> wait</a>
+</div>
+
+<div class="divsect" id="root-leave">
+	<p>All of his co-workers were gone. What could it mean? Stanley decided to go to the meeting room; perhaps he had simply missed a memo.</p>
+
+	<a href="#twodoors">> proceed forward</a>
+	<a href="#root-leave-inspect">> inspect</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect">
+	<p style="color: #008000">There are a few office cubicles and a window</p>
+
+	<a href="#root-leave-inspect-window">> look at the window</a>
+	<a href="#root-leave-inspect-default">> look at cubicle 433</a>
+	<a href="#root-leave-inspect-432">> look at cubicle 432</a>
+	<a href="#root-leave-inspect-default">> look at cubicle 431</a>
+	<a href="#root-leave-inspect-default">> look at cubicle 430</a>
+	<a href="#root-leave-inspect-429">> look at cubicle 429</a>
+	<a href="#root-leave-inspect-default">> look at cubicle 428</a>
+	<a href="#twodoors">> i'm done looking at cubicles please let me proceed</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-default">
+	<p style="color: #008000">It's just an office cubicle</p>
+
+	<a href="#root-leave-inspect">> return</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-window">
+	<p style="color: #008000">The window is elevated slightly off the ground</p>
+
+	<a href="#root-leave-inspect-window-tryjump">> jump out the window</a>
+	<a href="#root-leave-inspect">> return</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-window-tryjump">
+	<p style="color: #008000">You try to jump out the window</p>
+	<p style="color: #008000">You do not know how to jump over a knee-high ledge, and you instead plant your face into the window</p>
+
+	<a href="#root-leave-inspect">> return</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-432">
+	<p style="color: #008000">Cubicle 432 has a pencil sharpener instead of a computer. There are no pencils in the building.</p>
+
+	<a href="#root-leave-inspect">> return</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-429">
+	<p style="color: #008000">Cubicle 429 is next to the window. The chair looks especially moist</p>
+
+	<a href="#root-leave-inspect-chair">> climb on the chair</a>
+	<a href="#root-leave-inspect">> return</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-chair">
+	<p style="color: #008000">You climb on the chair</p>
+	<p style="color: #008000">You feel the cushions sink slightly</p>
+
+	<a href="#root-leave-inspect">> climb off the chair</a>
+	<a href="#root-leave-inspect-429">> walk onto employee 429's desk</a>
+</div>
+
+<div class="divsect" id="root-leave-inspect-429">
+	<p style="color: #008000">You walk onto employee 429's desk.</p>
+
+	<a href="#root-leave-inspect">> climb off employee 429's desk</a>
+	<a href="#outsidethewindow">> jump out the window</a>
+</div>
+
+<div class="divsect" id="outsidethewindow">
+	<p style="color: #008000">You fall out the window</p>
+	<p style="color: #008000">There is nothing</p>
+
+	<a href="#outsidethewindow-1	">> ...</a>
+</div>
+
+<div class="divsect" id="outsidethewindow-1">
+	<p>Ah, I can see you've found the Out of the Map ending! Well done. You see, in the original game, you can abuse chair hitboxes to break out of the map, where there would be an ending waiting for you.</p>
+	<p>However, that doesn't translate too well to the text-based nature of this port, so here you go, a new ending! I've made a few more changes here and there to certain elements of the game to make the transition to text go smoother.</p>
+	<p>While you're here, i'd like to recommend The Stanley Parable: Ultra Deluxe, the remake of the gamme this is based off. It adds a lot of new content to the original game, none of which will be included in this text port.</p>
+	<p>I'm not as good a writer as the original writer for TSP, so i'll just conclude this ending by saying: i sure hope this is worth it.</p>
+
+	<a href="#root">> restart</a>
+</div>
+
+<div class="divsect" id="twodoors">
+	<p>When Stanley came to a set of 2 open doors, he entered the door on his left.</p>
+
+	<a href="#meetingroom">> take the door on the left</a>
+	<a href="#employeelounge">> take the door on the right</a>
+	<a href="#twodoors-inspect">> inspect</a>
+</div>
+
+<div class="divsect" id="twodoors-inspect">
+	<p style="color: #008000">There are two doors</p>
+	<p style="color: #008000">The door on the left leads to the meeting room</p>
+	<p style="color: #008000">The door on the left leads to the employee lounge</p>
+
+	<a href="#meetingroom">> take the door on the left</a>
+	<a href="#employeelounge">> take the door on the right</a>
+</div>
+
+<div class="divsect" id="meetingroom">
+	<p>Stanley stepped into the meet room, yet there was not a single person here either.</p>
+
+	<a href="#broomcorridor">> leave the meeting room</a>
+	<a href="#meetingroom-inspect">> inspect</a>
+</div>
+
+<div class="divsect" id="meetingroom-inspect">
+	<p style="color: #008000">The projector is running through a set of slides from the last meeting. The slides are using a tacky blue default theme</p>
+
+	<a href="#broomcorridor">> leave the meeting room</a>
+	<a href="#meetingroom-slides0">> look at the projector screen</a>
+</div>
+
+<div class="divsect" id="meetingroom-slides0">
+	<p style="color: #008000">"Tips for not getting fired"</p>
+	<p style="color: #008000">"Talk less"</p>
+	<p style="color: #008000">"Do unbelievably amazing work all the time every day with no expectation of promotion or recognition"</p>
+	<p style="color: #008000">"Don't get fired'"</p>
+
+	<a href="#broomcorridor">> leave the meeting room</a>
+	<a href="#meetingroom-slides1">> wait for the next slide</a>
+</div>
+
+<div class="divsect" id="meetingroom-slides1">
+	<p style="color: #008000">"Solving interpersonal conflict"</p>
+	<p style="color: #008000">"If you ever find yourself in a conflict with another diligent employee, (like yourself (but more inclined toward conflict(unless you're the kind of person who initiates conflict? (why did we hire you?)))) remember that it takes two people to start a fight, and right now you're both of them."</p>
+
+	<a href="#broomcorridor">> leave the meeting room</a>
+	<a href="#meetingroom-slides2">> wait for the next slide</a>
+</div>
+
+<div class="divsect" id="meetingroom-slides2">
+	<p style="color: #008000">"Using slides to ensure employees that everything is okay"</p>
+	<p style="color: #008000">"Make sure your slide has a slick blue graphic in the header, and throw some bevel on all the text."</p>
+	<p style="color: #008000">"This will ensure a calm and productive work enviroment."</p>
+
+	<a href="#broomcorridor">> leave the meeting room</a>
+	<a href="#meetingroom-slides3">> wait for the next slide</a>
+</div>
+
+<div class="divsect" id="meetingroom-slides3">
+	<p style="color: #008000">"Everyone is unique"</p>
+	<p style="color: #008000">"YOU most of all!"</p>
+
+	<a href="#broomcorridor">> leave the meeting room</a>
+	<a href="#meetingroom-slides0">> wait for the next slide</a>
+</div>
+
+<div class="divsect" id="broomcorridor">
+	<p>Feeling a wave of disbelief, Stanley decided to go up to his boss's office, hoping he might find an answer there.</p>
+
+	<a href="#staircase">> head to your boss's office</a>
+	<a href="#broomcorridor-inspect">> inspect</a>
+</div>
+
+<div class="divsect" id="broomcorridor-inspect">
+	<p style="color: #008000">There's a door marked "BROOM CLOSET"</p>
+
+	<a href="#staircase">> head to your boss's office</a>
+	<a href="#broomcorridor-inspect-open">> open the door</a>
+</div>
+
+<div class="divsect" id="broomcorridor-inspect-open">
+	<p style="color: #008000">It's a small room with a few cleaning supplies and a shelf.</p>
+
+	<a href="#staircase">> head to your boss's office</a>
+	<a href="#broomcloset">> step into the broom closet</a>
+</div>
+
+<div class="divsect" id="broomcloset">
+	<p>Stanley stepped into the broom closet, but there was nothing here, so he turned around and got back on track.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-1">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-1">
+	<p>There was nothing here. No choice to make, No path to follow, Just an empty broom closet. No reason to still be here.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-2">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-2">
+	<p>It was baffling that Stanley was still just sitting in the broom closet. He wasn't even doing anything, At least if there were something to interact with, he'd be justified in some way.</p>
+	<p>As it is, he's literally just standing there, doing sweet FA.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-3">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-3">
+	<p>Are you... are you really still in the broom closet? Standing around doing nothing? Why?</p>
+	<p>Please offer me some explanation here; I'm- I'm genuinely confused.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-4">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-4">
+	<p>You do realize there's no choice or anything in here right? If I said, "Stanley walked past the broom closet" at least you would have had a reason for exploring it to find out.</p>
+	<p>But it didn't even occur to me because literally this closet is of absolutely no significance to the story whatsoever. I never would've thought to mention it.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-5">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-5">
+	<p>Maybe to you, this is somehow it's own branching path. Maybe, when you go talk about this with your friends, you'll say:</p>
+	<p>"OH! DID U GET THE BROOM CLOSET ENDING? THE BROOM CLOSET ENDING WAS MY FAVRITE!1 XD" ... I hope your friends find this concerning.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-6">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-6">
+	<p>Stanley was fat and ugly and really, really stupid. He probably only got the job because of a family connection; that's how stupid he is.</p>
+	<p>That, or with drug money. Also, Stanley is addicted to drugs and hookers.</p>
+
+	<a href="#staircase">> turn around and get back on track</a>
+	<a href="#broomcloset-7">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-7">
+	<p>Well, I've come to a very definite conclusion about what's going on right now. You're dead.</p>
+	<p>You got to this broom closet, looked at it, and were just about to leave because there's nothing here, when a physical malady of some sort shut down your central nervous system and you collapsed on the keyboard.</p>
+	<p>Well, in a situation like this, the responsible thing is to alert someone nearby so as to ensure that your body is taken care of, before it begins to decompose.</p>
+
+	<p style="font-size: 75px;">HELLO!! ANYONE WHO HAPPENS TO BE NEARBY!! THE PERSON AT THIS COMPUTER IS DEAD!</p>
+	<p style="font-size: 75px;">HE OR SHE HAS FALLEN PREY TO ANY NUMBER OF YOUR COUNTLESS HUMAN PHYSIOLOGICAL VULNERABILITIES. IT'S INDICATIVE OF THE LONG-TERM SUSTAINABILITY OF YOUR SPECIES.</p>
+	<p style="font-size: 75px;">PLEASE REMOVE THEIR CORPSE FROM THE AREA AND INSTRUCT ANOTHER HUMAN TO TAKE THEIR PLACE AT THE COMPUTER, MAKING SURE THEY UNDERSTAND BASIC FIRST-PERSON VIDEO GAME MECHANICS, AND FILLING THEM IN ON THE HISTORY OF NARRATIVE TROPES IN VIDEO GAMING, SO THAT THE IRONY AND INSIGHTFUL COMMENTARY OF THIS GAME IS NOT LOST ON THEM.</p>
+	<p>Alright, when you've done that, just step out into the hallway.</p>
+
+	<a href="#broomcorridor-playertwo">> leave the broom closet</a>
+</div>
+
+<div class="divsect" id="broomcorridor-playertwo">
+	<p>Ah, second player! It's good to have you on board. I guarantee you can't do any worse than the person who came before you.</p>
+
+	<a href="#staircase">> head to your boss's office</a>
+	<a href="#broomcloset-playertwo">> step into the broom closet</a>
+</div>
+
+<div class="divsect" id="broomcloset-playertwo">
+	<p>You too?! Unbelievable. I'm at the mercy of an entire species of invalids.</p>
+	<p>Perhaps there's a monkey nearby you can hand the controls to? A fish? A fungus? Look, you can hammer out the details; I'm not particularly picky.</p>
+	<p>I'll just be waiting for when you're ready to pick up the story again.</p>
+
+	<a href="#staircase">> leave the broom closet and head to your boss's office</a>
+	<a href="#broomcloset-playertwo-wait0">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-playertwo-wait0">
+	<p>...</p>
+
+	<a href="#staircase">> leave the broom closet and head to your boss's office</a>
+	<a href="#broomcloset-playertwo-wait1">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-playertwo-wait1">
+	<p>... ...</p>
+
+	<a href="#staircase">> leave the broom closet and head to your boss's office</a>
+	<a href="#broomcloset-playertwo-wait2">> do nothing</a>
+</div>
+
+<div class="divsect" id="broomcloset-playertwo-wait2">
+	<p>... ... ...</p>
+
+	<a href="#staircase">> leave the broom closet and head to your boss's office</a>
+	<a href="#broomcloset-playertwo-wait0">> do nothing</a>
+</div>
+
+<div class="divsect" id="staircase">
+	<p>Coming to a staircase, Stanley walked upstairs to his boss's office.</p>
+
+	<a href="#upstairs">> walk upstairs</a>
+	<a href="#downstairs">> walk downstairs</a>
+	<a href="#staircase-inspect">> inspect</a>
+</div>
+
+<div class="divsect" id="staircase-inspect">
+	<p style="color: #008000">There's a red light coming from downstairs. It's not particularly bright.</p>
+
+	<a href="#upstairs">> walk upstairs</a>
+	<a href="#downstairs-inspected">> walk downstairs</a>
+</div>
+
+<div class="divsect" id="downstairs">
+	<p style="color: #008000">There's a door into a parking lot.</p>
+
+	<a href="#upstairs">> walk upstairs</a>
+	<a href="#madness-0">> enter the door</a>
+</div>
+
+<div class="divsect" id="downstairs-inspected">
+	<p style="color: #008000">The red light was from a fire hosereel. OSHA compliant.</p>
+	<p style="color: #008000">There's a door into a parking lot.</p>
+
+	<a href="#upstairs">> walk upstairs</a>
+	<a href="#madness-0">> enter the door</a>
+</div>
+
+<div class="divsect" id="madness-0">
+	<p style="color: #008000">You step into a parking lot. There's only one parking spot, and there's a white van in it.</p>
+	<p>But Stanley just couldn't do it.</p>
+	<p>He considered the possibility of facing his boss, admitting he had left his post during work hours, he might be fired for that. And in such a competitive economy, why had he taken that risk?</p>
+
+	<a href="#madness-1">> move into the next room</a>
+</div>
+
+<div class="divsect" id="madness-1">
+	<p style="color: #008000">You step into a waiting room. There are a few chairs, as well as a filling cabinet with 4 clocks on it.</p>
+	<p>And then something occurred to Stanley: Maybe, he thought to himself, maybe I am crazy. All of my co-workers blinking mysteriously out of existence in a single moment for no reason at all?</p>
+	
+	<a href="#madness-2">> move into the next room</a>
+</div>
+
+<div class="divsect" id="madness-2">
+	<p style="color: #008000">You step into a grey corridor. There is nothing here except a printer.</p>
+	<p>For example, why couldn't he see stop moving from room to room? Why could he not go back the way he came?</p>
+	
+	<a href="#madness-3">> move into the next room</a>
+</div>
+
+<div class="divsect" id="madness-3">
+	<p style="color: #008000">You step into a parking lot. There's only one parking spot, and there's a white van in it.</p>
+	<p>And for that matter, these rooms were starting to look pretty familiar, were they simply repeating?</p>
+	<p>No, Stanley said to himself, this is all too strange, this can't be real, and at last he came to the conclusion that had been on the tip of his tongue, he just hadn't found the words for it.</p>
+	
+	<a href="#madness-4">> move into the next room</a>
+</div>
+
+<div class="divsect" id="madness-4">
+	<p style="color: #008000">You step into a waiting room. There are a few chairs, as well as a filling cabinet with 4 clocks on it.</p>
+	<p>I'm dreaming! he yelled, This is all a dream!</p>
+	<p>What a relief Stanley felt to have finally found an answer, an explanation. His co-workers weren't actually gone, he wasn't going to lose his job, he wasn't crazy after all!</p>
+	
+	<a href="#madness-5">> move into the next room</a>
+</div>
+
+<div class="divsect" id="madness-5">
+	<p style="color: #008000">You step into a grey corridor. There is nothing here except a printer.</p>
+	<p>And he thought to himself, I suppose I'll wake up soon, I'll have to go back to my boring real life job pushing buttons, I may as well enjoy this while I'm still lucid.</p>
+	<p>So he imagined himself flying, and began to gently float above the ground.</p>
+	<p>Then he imagined himself soaring through space on a magical star field, and it too appeared!</p>
+	
+	<a href="#madness-6">> soar into the next room</a>
+</div>
+
+<div class="divsect" id="madness-6">
+	<p style="color: #008000">You step into a parking lot. There's only one parking spot, and there's a white van in it.</p>
+	<p>It was so much fun, and Stanley marvelled that he had still not woken up. How was he remaining so lucid?</p>
+	<p>And then perhaps the strangest question of them all entered Stanley's head, one he was amazed he hadn't asked himself sooner:</p>
+	<p>Why is there a voice in my head, dictating everything that I'm doing and thinking?</p>
+	<p>Now the voice was describing itself being considered by Stanley, who found it particularly strange. I'm dreaming about a voice describing me thinking about how it's describing my thoughts, he thought!</p>
+	
+	<a href="#madness-7">> move into the next room</a>
+</div>
+
+<div class="divsect" id="madness-7">
+	<p style="color: #008000">You step into a waiting room. There are a few chairs, as well as a filling cabinet with 4 clocks on it.</p>
+	<p>And while he thought it all very odd and wondered if this voice spoke to all people in their dreams, the truth was that of course this was not a dream. How could it be?</p>
+	<p>Was Stanley simply deceiving himself? Believing that if he's asleep he doesn't have to take responsibility for himself?</p>
+
+	<a href="#madness-8">> Stanley is as awake right now as he's ever been in his life.</a>
+</div>
+
+<div class="divsect" id="madness-8">
+	<p>Now hearing the voice speak these words was quite a shock to Stanley. After all, he knew for certain beyond a doubt that this was, in fact, a dream!</p>
+	<p>Did the voice not see him float and make the magical stars just a moment ago? How else would the voice explain all that?</p>
+	<p>This voice was a part of himself too, surely, surely if he could just...</p>
+	<p>He would prove it. He would prove that he was in control, that this was a dream.</p>
+
+	<a href="#madness-9">> Close your eyes.</a>
+</div>
+
+<div class="divsect" id="madness-9">
+	<p>So he closed his eyes gently, and he invited himself to wake up.</p>
+	<p>He felt the cool weight of the blanket on his skin, the press of the mattress on his back, the fresh air of a world outside this one. Let me wake up, he thought to himself.</p>
+	<p>I'm through with this dream, I wish it to be over. Let me go back to my job, let me continue pushing the buttons, please, it's all I want.</p>
+	<p>I want my apartment, and my wife, and my job. All I want is my life exactly the way it's always been.</p>
+	<p>My life is normal, I am normal. Everything will be fine.</p>
+	<p>I am okay.</p>
+
+	<a href="#madness-10">> I am okay.</a>
+</div>
+
+<div class="divsect" id="madness-10">
+	<p style="color: #008000">...</p>
+
+	<a href="#madness-10">> I am okay.</a>
+</div>
+
+</body>
+
+</html>
+
+
