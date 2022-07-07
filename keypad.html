@@ -3,6 +3,15 @@
 
 <head>
 <style>
+
+li {
+  float: left;
+}
+
+li a:hover {
+  background-color: #646464;
+}
+
 .divsect{
 	padding: 5px;
 	display: flex;
@@ -14,7 +23,31 @@
 	padding: 20px;
 	font-size: 80px;
 }
+
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #161616;
+}
+
+.navbarElement {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 </style>
+
+<body>
+<ul class="navbar">
+  <li><a class="navbarElement" href="index.html">Home</a></li>
+  <li><a class="navbarElement" href="projects.html">Projects</a></li>
+  <li><a class="navbarElement" href="achive.html">Achievements</a></li>
+  <li><a class="navbarElement" href="keypad.html">Secret??</a></li>
+</ul>
 
 <div class="divsect" style="background-color: #ffffff; height: 1000px; align-items: center; flex-direction: column; text-align: center;" id="root">
 	<div style="background-color: #808080; height:650px; width: 320px; display: flex; flex-direction: column; text-align: center; align-items: center;">
@@ -23,7 +56,8 @@
 		<p><a href="keypad.html" class="keypadbutton">7</a><a href="keypad.html" class="keypadbutton">8</a><a href="keypad.html" class="keypadbutton">9</a></p>
 		<p><a href="keypad.html" class="keypadbutton">0</a></p>
 	</div>
-	<p>it's a a keypad.</p>
+	<p style="font-size: 30px;">it's a a keypad. maybe you could find someone willing to tell you the code.</p>
+	<p style="font-size: 10px;">hint: check the home page</p>
 </div>
 
 </body>
